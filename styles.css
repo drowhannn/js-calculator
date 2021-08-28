@@ -4,12 +4,12 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
+  background-color: teal;
+  height: 100vh;
 }
 
 .container {
-  min-width: 50vw;
-  min-height: 80vh;
-  border: 1px solid red;
+  min-width: 55vh;
 }
 
 .score__container {
@@ -25,7 +25,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  height: 500px;
+  min-height: 300px;
 }
 
 .equalsTo {
