@@ -1,7 +1,52 @@
-div {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  min-width: 50vw;
+  min-height: 80vh;
   border: 1px solid red;
+}
+
+.score__container {
+  display: grid;
+  align-items: center;
+  background-color: rgb(36, 35, 35);
+  color: white;
+  text-align: right;
+  padding-right: 20px;
+  height: 80px;
 }
 .buttons__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 500px;
+}
+
+.equalsTo {
+  grid-row: span 4;
+}
+
+.text__button {
+  font-size: 40px;
+  border: 1px solid rgb(156, 142, 142);
+}
+
+.equalsTo {
+  background-color: rgb(209, 15, 15);
+}
+.equalsTo:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.operators {
+  background-color: rgb(185, 179, 179);
+}
+.operators:hover {
+  background-color: rgb(134, 128, 128);
 }
